@@ -1,0 +1,24 @@
+# PROJECT IN PROGRESS
+
+print('\nGuess what number I\'m thinking of...\nFROM 0 TO 100')
+print('\nSelect your difficulty level by entering the number assigned to it and the number of attempts at the same time\n')
+print("""
+    GOD MODE - 1
+    LUCKY - 2
+    PLAYA - 3
+    MEDIUM - 4
+    EASY - 5
+    VERY EASY - 6
+    RETARDED GAMER - 7
+""")
+
+difficult = int(input('Test your luck: '))
+user_number = int(input('Your number: '))
+number = 13
+
+if user_number != number:
+    while user_number != number:
+        print('Nope!')
+        user_number = int(input('Your number: '))
+        if user_number == number:
+            print('Win!')
